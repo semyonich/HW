@@ -1,0 +1,26 @@
+.menu{
+	background-color: pink;
+	border: 2px solid black;
+	color: green;
+	padding: 5px;
+	margin: 5px;
+	width: 150px;
+	float: left;
+
+}
+
+.menu:hover{
+	background-color: red;
+	color: white;
+
+}
+
+.col{
+	background-color: grey;
+	border: 2px dashed red;
+	color: yellow;
+	width: 150px;
+	height: 150px;
+	
+
+}
