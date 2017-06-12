@@ -20,7 +20,11 @@ for itm in my_list:
 print("Step 3 result is:", new_list)
 
 # Here must be logical sequence, but i haven't written it
-print("Step 4 result is:", "none")
+# for itm in new_list:
+#     if isinstance(itm,str):
+#         if itm.find("m") != -1 or itm.find("n") != -1:
+#             new_list.remove(itm)
+# print("Step 4 result is:", new_list)
 
 new_list.sort(reverse=True)
 print("Step 5 result is:", new_list)
