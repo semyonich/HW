@@ -27,8 +27,8 @@ print("Step 5 result is:", new_list)
 
 new_str = ""
 for itm in new_list: new_str += itm + ","
-print("Step 6 result is:", new_str)
+print("Step 6 result is:", new_str, type(new_str))
 
 for itm in new_list:
     itm = itm.split(",")
-print("Step 7 result is:", new_list)
+print("Step 7 result is:", new_list, type(new_list))
