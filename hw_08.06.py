@@ -29,4 +29,6 @@ new_str = ""
 for itm in new_list: new_str += itm + ","
 print("Step 6 result is:", new_str)
 
-print("Step 7 result is:", "none")
+for itm in new_list:
+    itm = itm.split(",")
+print("Step 7 result is:", new_list)
