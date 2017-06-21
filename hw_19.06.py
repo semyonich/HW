@@ -14,22 +14,22 @@ f = open("data.csv", mode="r+", encoding="UTF-8")
 chromedriver = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chromedriver.exe")
 driver = webdriver.Chrome(chromedriver)
 
-# driver.set_window_size(414, 736)
-#
-# driver.get("https://habrahabr.ru/")
-# driver.find_element_by_xpath("//a[@href='https://habrahabr.ru/auth/register/']").click()
-# driver.find_element_by_xpath("//input[@name='email']").send_keys("zaurus@bigmir.net")
-# driver.find_element_by_xpath("//input[@name='login']").send_keys("Semyonich")
-# driver.find_element_by_xpath("//input[@name='password']").send_keys("123456")
-# driver.find_element_by_xpath("//input[@name='password2']").send_keys("123456")
-#
-# driver.maximize_window()
-#
-#
-#
-# driver.get("http://toster.ru")
-# search_input = driver.find_element_by_name("q")
-# search_input.send_keys("python" + Keys.RETURN)
+driver.set_window_size(414, 736)
+
+driver.get("https://habrahabr.ru/")
+driver.find_element_by_xpath("//a[@href='https://habrahabr.ru/auth/register/']").click()
+driver.find_element_by_xpath("//input[@name='email']").send_keys("zaurus@bigmir.net")
+driver.find_element_by_xpath("//input[@name='login']").send_keys("Semyonich")
+driver.find_element_by_xpath("//input[@name='password']").send_keys("123456")
+driver.find_element_by_xpath("//input[@name='password2']").send_keys("123456")
+
+driver.maximize_window()
+
+
+
+driver.get("http://toster.ru")
+search_input = driver.find_element_by_name("q")
+search_input.send_keys("python" + Keys.RETURN)
 
 
 driver.get("https://toster.ru/questions/interesting?page=89")
