@@ -32,12 +32,11 @@ search_input = driver.find_element_by_name("q")
 search_input.send_keys("python" + Keys.RETURN)
 
 
-driver.get("https://toster.ru/questions/interesting?page=89")
-next_btn = driver.find_element_by_partial_link_text("Следующи")
+driver.get("https://toster.ru/questions/interesting?page=86")
+next_btn = True
 
 while next_btn:
     topics = driver.find_elements_by_class_name("question_short")
-    next_btn = driver.find_element_by_partial_link_text("Следующи")
     # print("Page {}".format(page))
     # if page == 1:
     for topic in topics:
@@ -58,7 +57,12 @@ while next_btn:
         # filewriter.writerow(file_string)
         f.write(file_string)
 
-    next_btn.click()
+    try:
+        next_btn = driver.find_element_by_partial_link_text("Следующи")
+        next_btn.click()
+    except NoSuchElementException:
+        print("Last page")
+        next_btn = False
 
 driver.close()
 
