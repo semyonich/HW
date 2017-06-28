@@ -37,8 +37,8 @@ select capital from countries where continent= 'Europe';
 select capital from countries where continent= 'North America';
 
 select count(country) from countries where continent= 'Europe';
-select count(population) from countries where continent= 'Asia';
-select count(population) from countries where continent= 'North America';
+select count(country) from countries where continent= 'Asia';
+select count(country) from countries where continent= 'North America';
 
 select sum(population) from countries where continent= 'Europe';
 select sum(population) from countries where continent= 'Asia';
