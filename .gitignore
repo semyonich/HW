@@ -1,6 +1,9 @@
+#IDE
 .idea
-/ENV/*
-/Lections_video/*
+
+#Python
 *.pyc
+
+#Windows extensions
 *.exe
 *.bat
